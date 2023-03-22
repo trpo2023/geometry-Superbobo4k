@@ -75,6 +75,5 @@ dkms.conf
 geometry
 geometry-output
 main.cpp
-geometry.cpp
 
 *.exe
