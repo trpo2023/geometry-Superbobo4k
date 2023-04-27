@@ -70,10 +70,4 @@ dkms.conf
 *.lai
 
 # Executables
-
-# Custom
 geometry
-geometry-output
-main.cpp
-
-*.exe
