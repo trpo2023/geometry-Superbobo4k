@@ -70,4 +70,4 @@ dkms.conf
 *.lai
 
 # Executables
-geometry
+bin/geometry
