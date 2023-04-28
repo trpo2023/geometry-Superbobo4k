@@ -1,6 +1,8 @@
 #define CTEST_MAIN
 
-#include <ctest.h>
+#include <../thirdparty/ctest.h>
+
+using namespace std;
 
 int main()
 {
