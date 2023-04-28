@@ -1,7 +1,7 @@
 #include <../src/libgeometry/geometry.h>
 #include <../thirdparty/ctest.h>
 
-CTEST(arithmetic_suite, input_initial)
+CTEST(parsing_suite, input_initial)
 {
   //Given
   size_t p = 7;
@@ -18,7 +18,7 @@ CTEST(arithmetic_suite, input_initial)
   ASSERT_EQUAL(expected, result);
 }
 
-CTEST(arithmetic_suite, parsing_initial)
+CTEST(parsing_suite, parsing_initial)
 {
   //Given
   size_t p = 7;
@@ -51,7 +51,7 @@ CTEST(arithmetic_suite, calculate_initial)
   ASSERT_EQUAL(expected, result);
 }
 
-CTEST(arithmetic_suite, print_initial)
+CTEST(parsing_suite, print_initial)
 {
   //Given
   int I = 0;
@@ -66,7 +66,7 @@ CTEST(arithmetic_suite, print_initial)
   ASSERT_EQUAL(expected, result);
 }
 
-CTEST(arithmetic_suite, input_situational)
+CTEST(parsing_suite, input_situational)
 {
   //Given
   size_t p = 7;
@@ -83,7 +83,7 @@ CTEST(arithmetic_suite, input_situational)
   ASSERT_EQUAL(expected, result);
 }
 
-CTEST(arithmetic_suite, parsing_error)
+CTEST(parsing_suite, parsing_error)
 {
   //Given
   size_t pointer = 7;
@@ -116,7 +116,7 @@ CTEST(arithmetic_suite, calculate_fail_test)
   ASSERT_EQUAL(expected, result);
 }
 
-CTEST(arithmetic_suite, print_Array_fail)
+CTEST(parsing_suite, print_Array_fail)
 {
   //Given
   double a[100][100];
@@ -131,7 +131,7 @@ CTEST(arithmetic_suite, print_Array_fail)
   ASSERT_EQUAL(expected, result);
 }
 
-CTEST(arithmetic_suite, input_error_exceed)
+CTEST(parsing_suite, input_error_exceed)
 {
   //Given
   string line = "circle(10 0.4, 3)";
@@ -148,7 +148,7 @@ CTEST(arithmetic_suite, input_error_exceed)
   ASSERT_EQUAL(expected, result);
 }
 
-CTEST(arithmetic_suite, parsing_max)
+CTEST(parsing_suite, parsing_max)
 {
   //Given
   double circleArray[100][100];
