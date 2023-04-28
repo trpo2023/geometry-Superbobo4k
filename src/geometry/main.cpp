@@ -9,9 +9,7 @@
 
 using namespace std;
 
-int main()
-{
-	string line;
+int main(){string line;
 	int circleCounter;
 	double circleArray[100][100];
 	ifstream inFile;
