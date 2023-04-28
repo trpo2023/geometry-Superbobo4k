@@ -41,3 +41,20 @@ clean:
 	$(RM) $(APP_PATH) $(LIB_PATH)
 	find $(OBJ_DIR) -name '*.o' -exec $(RM) '{}' \;
 	find $(OBJ_DIR) -name '*.d' -exec $(RM) '{}' \;
+	
+	
+TEST_NAME = test
+TEST_EXE_PATH = bin/test
+TEST_OBJ_PATH = obj/test
+	
+.PHONY: test
+test: $(TEST_EXE_PATH)
+
+$(TEST_EXE_PATH): $(TEST_OBJ_PATH)/main.o $(TEST_OBJ_PATH)/test.o $(LIB_PATH)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@
+	
+$(TEST_OBJ_PATH)/test.o: test/test.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
+	
+$(TEST_OBJ_PATH)/main.o: test/main.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
