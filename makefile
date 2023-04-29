@@ -45,7 +45,7 @@ clean:
 	
 TEST_NAME = test
 TEST_EXE_PATH = bin/test
-TEST_OBJ_PATH = obj/test
+TEST_OBJ_PATH = test
 	
 .PHONY: test
 test: $(TEST_EXE_PATH)
